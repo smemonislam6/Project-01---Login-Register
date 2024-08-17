@@ -1,0 +1,13 @@
+Register
+
+1. User Input
+2. Validation -> Error Message
+3. Store
+
+
+Login
+
+1. User Input
+2. Validation
+3. Database == User Input Match
+
