@@ -1,9 +1,11 @@
 <?php 
+    include "../src/helpers.php";
 
-    if(isset($errors))
-    {
-        print_r($errors);
-    }
+    echo base_url("/src/userRegister.php");
+    // if(isset($errors))
+    // {
+    //     print_r($errors);
+    // }
     
 
 ?>
@@ -77,7 +79,7 @@
                     </div>
 
                     <div class="mt-10 mx-auto w-full max-w-xl">
-                        <form class="space-y-6" action="http://localhost/Class/Project%2001/src/userRegister.php" method="POST">
+                        <form class="space-y-6" action="" method="POST">
                             <div>
                                 <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                                 <div class="mt-2">

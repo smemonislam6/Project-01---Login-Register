@@ -1,5 +1,12 @@
 <?php 
 
+include_once "config.php";
+
+function base_url(string $url) 
+{
+    return BASE_URL . ltrim($url, '/');
+}
+
 function input_sanitize(string $data): string
 {
     $data = trim($data);
