@@ -1,10 +1,10 @@
 <?php 
 
-include_once "config.php";
+include_once __DIR__ . "/../src/config.php";
 
-function base_url(string $url) 
+function app_url(string $path)
 {
-    return BASE_URL . ltrim($url, '/');
+    return BASE_URL . '/' . ltrim($path, '/');
 }
 
 function input_sanitize(string $data): string

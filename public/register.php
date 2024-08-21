@@ -1,12 +1,12 @@
 <?php 
-    include "../src/helpers.php";
+    include __DIR__ . "/../src/helpers.php";
+    session_start();
+    if(isset($_SESSION['errors']))
+    {
+        print_r($_SESSION['errors']);
+    }
 
-    echo base_url("/src/userRegister.php");
-    // if(isset($errors))
-    // {
-    //     print_r($errors);
-    // }
-    
+  
 
 ?>
 
@@ -79,7 +79,7 @@
                     </div>
 
                     <div class="mt-10 mx-auto w-full max-w-xl">
-                        <form class="space-y-6" action="" method="POST">
+                        <form class="space-y-6" action="<?= app_url("/src/userRegister.php") ?>" method="POST">
                             <div>
                                 <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                                 <div class="mt-2">
