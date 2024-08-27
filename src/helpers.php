@@ -1,10 +1,17 @@
 <?php 
 
-include_once __DIR__ . "/../src/config.php";
+include_once __DIR__ . "/../config.php";
+$env = include_once __DIR__ . "/../env.php";
 
-function app_url(string $path)
+function app_url_const(string $path): string
 {
-    return BASE_URL . '/' . ltrim($path, '/');
+    return BASE_URL . ltrim($path, '/');
+}
+
+function app_url_array(string $path): string
+{
+    global $env;
+    return $env['app_url'] . ltrim($path, '/');
 }
 
 function input_sanitize(string $data): string
@@ -61,7 +68,6 @@ function validate_password(string $password): null|string
     }
 
     return null;
-
 }
 
 

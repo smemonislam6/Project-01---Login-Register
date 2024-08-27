@@ -6,8 +6,6 @@
         print_r($_SESSION['errors']);
     }
 
-  
-
 ?>
 
 <!DOCTYPE html>
@@ -78,8 +76,9 @@
                         <h1 class="block text-center font-bold text-2xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">TruthWhisper</h1>
                     </div>
 
+
                     <div class="mt-10 mx-auto w-full max-w-xl">
-                        <form class="space-y-6" action="<?= app_url("/src/userRegister.php") ?>" method="POST">
+                        <form class="space-y-6" action="<?= app_url_array("/src/userRegister.php") ?>" method="POST">
                             <div>
                                 <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                                 <div class="mt-2">

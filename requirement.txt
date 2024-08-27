@@ -17,3 +17,7 @@ Login
 URL ->  http://localhost/Class/Project%2001/public/register.php -> Absolute URL  -> img src="", href="", action="" 
 PATH -> C:\laragon\www\Class\Project 01/requirement.txt -> Absolute PATH 
 PATH -> requirement.txt -> Relative PATH 
+
+
+PATH  -> Directory
+URL -> URL
